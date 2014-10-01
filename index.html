@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/soundjs-0.5.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/inc/Base64.js"></script>
+        <script src="js/inc/base64binary.js"></script>
+        <script src="js/MIDI/MIDI.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/three.js"></script>
+        <script src="js/instrument.js"></script>
+        <div>
+            <p>Wait beep before playing</p>
+            <p>Hold left mousebutton to pick strings. You can change chords by pressing Q (Am), W (G) or E (D). Press buttons to change effects or instrument. PS! strum only one string when SPECIAL effect is on.</p>
+            <button class="clean-button" data-type="clean">CLEAN <span class="status">ON</span></button>
+            <button class="echo-button" data-type="echo">ECHO <span class="status">OFF</span></button>
+            <button class="special-button" data-type="special">SPECIAL <span class="status">OFF</span></button>
+            <button class="jazz-guitar-button">JAZZ GUITAR</button>
+            <button class="clean-electric-guitar-button">CLEAN ELECTRIC GUITAR</button>
+            <button class="acoustic-guitar-nylon-button">ACOUSTIC GUITAR NYLON</button>
+        </div>
+        <div id="container" style="height: 100%; width: 100%">
+        </div>
+    </body>
+</html>
